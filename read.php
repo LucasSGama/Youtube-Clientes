@@ -15,7 +15,7 @@
                 echo "<td>".$row["email"]."</td>";
                 echo "<td>
                     <button type='button' class='btn btn-success'>Editar</button>
-                    <button type='button' class='btn btn-danger'>Excluir</button>
+                    <button type='button' class='btn btn-danger' onclick=\"remove('".$row['id']."')\">Excluir</button>
                 </td>";
             echo "</tr>";
         }
