@@ -7,7 +7,18 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div class="container p-3">
+    <div class="container p-4">
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <form class="d-flex">
+                    <a href="index.html" class="btn btn-success">Cadastrar clientes</a>
+                </form>
+            </div>
+    </nav>
+    <br>
+    <!-- NAVBAR END -->
+
         <div class="card p-2">
             <div class="card-header bg-secondary">
                 <p style="color: white;">Cadastro de Clientes</p>
@@ -26,18 +37,20 @@
                     <input type="text" class="form-control" id="address">
                 </div>
                 <div class="col-md-6">
-                    <label for="phone" class="form-label">Telefone</label>
-                    <input type="text" class="form-control" id="phone">
+                    <label for="telephone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telephone">
                 </div>
                 <div class="col-md-6">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email">
                 </div>
                 <div class="col-md-6">
-                    <input type="submit" id="btn" class="btn btn-primary" value="Cadastrar">
+                    <input type="submit" id="btn" class="btn btn-primary" value="Cadastrar" onclick="createUser()">
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="../scripts/cadastro.js"></script>
 </body>
 </html>
