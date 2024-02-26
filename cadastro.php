@@ -5,7 +5,6 @@ header('Access-Control-Allow-Origin: *');
     require_once('config.php');
     session_start();
 
-    $name = $_POST['name']
     $name = isset($_POST['name']) ? $_POST['name'] : null;
     $cpf = isset($_POST['cpf']) ? $_POST['cpf'] : null;
     $address = isset($_POST['address']) ? $_POST['address'] : null;

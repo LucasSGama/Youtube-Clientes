@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Cadastro</title>
+    <title>Editar</title>
 </head>
 <body>
     <div class="container p-4">
@@ -21,31 +21,32 @@
 
         <div class="card p-2">
             <div class="card-header bg-secondary">
-                <p style="color: white;">Cadastro de Clientes</p>
+                <p style="color: white;">Atualizar dados do Cliente</p>
             </div>
             <div class="row g-3">
                 <div class="col-md-6">
-                    <label for="name" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="name">
+                    <input type="hidden" class="form-control" id="id">
+                    <label for="name-1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name-1">
                 </div>
                 <div class="col-md-6">
-                    <label for="cpf" class="form-label">CPF</label>
-                    <input type="text" class="form-control" id="cpf">
+                    <label for="cpf-1" class="form-label">CPF</label>
+                    <input type="text" class="form-control" id="cpf-1">
                 </div>
                 <div class="col-md-12">
-                    <label for="address" class="form-label">Endereço</label>
-                    <input type="text" class="form-control" id="address">
+                    <label for="address-1" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="address-1">
                 </div>
                 <div class="col-md-6">
-                    <label for="telephone" class="form-label">Telefone</label>
-                    <input type="text" class="form-control" id="telephone">
+                    <label for="telephone-1" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telephone-1">
                 </div>
                 <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email">
+                    <label for="email-1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email-1">
                 </div>
                 <div class="col-md-6">
-                    <input type="submit" id="btn" class="btn btn-primary" value="Cadastrar" onclick="createUser()">
+                    <input type="submit" id="btn" class="btn btn-primary" value="Atualizar" onclick="updateUser()">
                 </div>
             </div>
         </div>
